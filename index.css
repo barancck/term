@@ -6,6 +6,32 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .header {
   text-align: center;
+  
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .s1 {
@@ -33,3 +59,19 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   font-size: 20px;
   
 }
+
+.st2 {
+  justify-content: center;
+}
+
+.st22 {
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  column-gap: 150px;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+
